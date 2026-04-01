@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "flyonui";
+@plugin "@iconify/tailwind4";
+@import "../node_modules/flyonui/variants.css";
+
+@source "../node_modules/flyonui/dist/index.js";
+
+[data-theme="ponpes"] {
+  --color-base-100: #fefefe;
+  --color-base-content: #1d1d1d;
+
+  --color-neutral: #fefefe;
+}
