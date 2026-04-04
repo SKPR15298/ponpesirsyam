@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-static"; // Ganti adapter
+import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,10 +13,6 @@ const config = {
     paths: {
       base: process.env.NODE_ENV === "production" ? "/ponpesirmus" : "",
     },
-  },
-  vitePlugin: {
-    dynamicCompileOptions: ({ filename }) =>
-      filename.includes("node_modules") ? undefined : { runes: true },
   },
 };
 
